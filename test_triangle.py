@@ -20,3 +20,7 @@ def test_case4_not_a_triangle_zero():
 def test_case5_not_a_triangle_inequality():
     # Input: 8, 2, 4
     assert check_triangle(8, 2, 4) == "It is not a triangle."
+
+def test_case6_isosceles_bug():
+    # Input: 3,4,3
+    assert check_triangle(3,4,3) == "Isosceles triangle"
